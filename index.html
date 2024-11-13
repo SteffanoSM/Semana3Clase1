@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>¡Únete al cambio! Sé un héroe en tu comunidad</h1>
+      <p>
+        Tu tiempo y tus habilidades pueden marcar una gran diferencia. Ayúdanos
+        a construir una comunidad más fuerte y solidaria.
+      </p>
+    </header>
+    <form>
+      <div class="containerInputs">
+        <section>
+          <div class="basicInformation">
+            <label class="labelHeader" id="inputNombre">Nombre completo</label>
+            <input
+              id="inputNombre"
+              placeholder="Nombres y Apellidos"
+              type="text"
+              minlength="8"
+              maxlength="22"
+            />
+          </div>
+          <div class="basicInformation">
+            <label class="labelHeader" id="inputEmail">Correo Electrónico</label>
+            <input
+              id="inputEmail"
+              placeholder="abc@dominio.com"
+              type="email"
+              required
+            />
+          </div>
+          <div class="basicInformation">
+            <label class="labelHeader" id="inputTel">Número Telefónico</label>
+            <input
+              id="inputTel"
+              type="tel"
+              placeholder="999999999"
+              required
+              min="0"
+              max="999999999"
+            />
+          </div>
+        </section>
+        <section>
+          <div class="basicInformation">
+            <label class="labelHeader" id="inputInterest">Áreas de interés</label>
+            <label for="inputEducacion">Educación</label>
+            <input id="inputEducacion" type="radio" value="Educacion" />
+            <label for="inputAnimales">Animales de la Calle</label>
+            <input id="inputAnimales" type="radio" value="Animales" />
+            <label for="inputMedioAmbiente">Medio Ambiente</label>
+            <input id="inputMedioAmbiente" type="radio" value="Ambiente" />
+            <label for="inputSalud">Salud</label>
+            <input id="inputSalud" type="radio" value="Salud" />
+            <label for="inputApoyoSocial">Apoyo Social</label>
+            <input id="inputApoyoSocial" type="radio" value="Social" />
+          </div>
+          <div class="basicInformation">
+            <label class="labelHeader" id="inputDays">Días disponibles</label>
+            <label for="inputLunes">Lunes</label>
+            <input id="inputLunes" type="checkbox" value="Lunes" />
+            <label for="inputMartes">Martes</label>
+            <input id="inputMartes" type="checkbox" value="Martes" />
+            <label for="inputMiercoles">Miercoles</label>
+            <input id="inputMiercoles" type="checkbox" value="Miercoles" />
+            <label for="inputJueves">Jueves</label>
+            <input id="inputJueves" type="checkbox" value="Jueves" />
+            <label for="inputViernes">Viernes</label>
+            <input id="inputViernes" type="checkbox" value="Viernes" />
+            <label for="inputSabado">Sabado</label>
+            <input id="inputSabado" type="checkbox" value="Sabado" />
+            <label for="inputDomingo">Domingo</label>
+            <input id="inputDomingo" type="checkbox" value="Domingo" />
+          </div>
+          <div class="basicInformation">
+            <label class="labelHeader" id="inputExp">Experiencia Previa</label>
+            <input
+              id="inputExp"
+              type="text"
+              minlength="0"
+              placeholder="Describe brevemente tu experiencia"
+            />
+          </div>
+        </section>
+        <div class="ending">
+          <label for="inputImagen">Sube una foto</label>
+          <input type="file" id="inputImagen" accept=".png, .jpg, .jpeg" />
+        </div>
+        <div class="ending">
+          <label class="labelHeader" id="inputTerms">Términos y Condiciones</label>
+          <label>Acepto los términos y condiciones</label>
+          <input type="checkbox" required />
+        </div>
+        <button type="submit">Enviar información</button>
+      </div>
+    </form>
+    <footer>
+      <p>
+        ¡Gracias por unirte a nuestra causa! Tu compromiso es invaluable, y
+        juntos haremos una gran diferencia en la comunidad. Nos pondremos en
+        contacto pronto para que podamos comenzar a trabajar en equipo.
+      </p>
+    </footer>
+  </body>
+</html>
